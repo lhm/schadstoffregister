@@ -1,0 +1,6 @@
+venv
+*.csv
+*.zip
+*.pyc
+*.sqlite
+*.geojson
