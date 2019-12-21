@@ -2,3 +2,6 @@ pandas
 geopandas
 requests
 requests-cache
+rtree
+descartes
+geoplot
