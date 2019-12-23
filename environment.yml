@@ -1,0 +1,10 @@
+name: geo
+channels:
+  - defaults
+dependencies:
+  - geopandas
+  - python=3
+  - ipython
+  - matplotlib
+  - descartes
+
