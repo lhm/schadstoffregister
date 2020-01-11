@@ -1,210 +1,233 @@
 {
-    "profile": "tabular-data-package",
-    "resources": [
-        {
-            "path": "data/prtr-emissions.csv",
-            "profile": "tabular-data-resource",
-            "name": "prtr-emissions",
-            "format": "csv",
-            "mediatype": "text/csv",
-            "encoding": "utf-8",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "jahr",
-                        "type": "integer",
-                        "format": "default"
-                    },
-                    {
-                        "name": "kennnummer",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "betriebsname",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "betriebsname_2",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "plz",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "ort",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "strasse",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "hausnr",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "bundesland",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "flusseinzugsgebiet",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "geo_lat_wgs84",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "geo_long_wgs84",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "taet_nr",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "taetigkeit",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "activity",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "haupttaetigkeit",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "branche",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "sector",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "nace_id",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "nace_wirtschaftszweig",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "nace_sector",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "stoffgruppe",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "substances_group",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "schadstoff",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "pollutant",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "umweltkompartiment",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "releases_to",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "jahresfracht_freisetzung",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "versehentliche_freisetzung",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "schadstoff_schwellenwert",
-                        "type": "number",
-                        "format": "default"
-                    },
-                    {
-                        "name": "einheit",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "unit",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "bestimmungsmethode",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "determination_method",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "schutzgrund_fracht",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "confidential_reason_release",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "schutzgrund_betrieb",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "confidential_reason_facility",
-                        "type": "string",
-                        "format": "default"
-                    }
-                ],
-                "missingValues": [
-                    ""
-                ]
-            }
-        }
-    ]
+  "profile": "data-package",
+  "resources": [
+    {
+      "path": "data/prtr-emissions.csv",
+      "pathType": "local",
+      "name": "prtr-emissions",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "jahr",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "kennnummer",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "betriebsname",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "betriebsname_2",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "plz",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "ort",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "strasse",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "hausnr",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "bundesland",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "flusseinzugsgebiet",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "geo_lat_wgs84",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "geo_long_wgs84",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "taet_nr",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "taetigkeit",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "activity",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "haupttaetigkeit",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "branche",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "sector",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nace_id",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nace_wirtschaftszweig",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "nace_sector",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "stoffgruppe",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "substances_group",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "schadstoff",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "pollutant",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "umweltkompartiment",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "releases_to",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "jahresfracht_freisetzung",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "versehentliche_freisetzung",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "schadstoff_schwellenwert",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "einheit",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "bestimmungsmethode",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "determination_method",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "schutzgrund_fracht",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "confidential_reason_release",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "schutzgrund_betrieb",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "confidential_reason_facility",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "path": "data/prtr-emissions.geojson",
+      "pathType": "local",
+      "name": "prtr-emissions-geojson",
+      "format": "geojson",
+      "mediatype": "application/geo+json",
+      "encoding": "UTF-8"
+    }
+  ],
+  "name": "german-prtr-emissions",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "title": "Umweltbundesamt - Thru.de",
+      "path": "https://www.thru.de/fileadmin/SITE_MASTER/content/Dokumente/Downloads/01_Topthemen/PRTR-Daten_2017/CSV_PRTR-Export_GERMANY_2019-11-25.zip"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "other-at",
+      "path": "https://www.thru.de/index.php?id=479&L=3"
+    }
+  ]
 }
