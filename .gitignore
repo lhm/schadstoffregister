@@ -5,3 +5,4 @@ venv
 *.sqlite
 *.geojson
 !examples/*.geojson
+!data/prtr-emissions.csv
